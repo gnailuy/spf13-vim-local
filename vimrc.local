@@ -1,0 +1,16 @@
+" Themes
+colorscheme Tomorrow-Night
+" colorscheme iceberg
+" colorscheme onedark
+
+" Disable spelling check by default
+set nospell
+
+if isdirectory(expand("~/.vim/bundle/nerdtree"))
+    " Keep NERDTree open after opening a file
+    let NERDTreeQuitOnOpen=0
+    " Release Ctrl-E from NERDTree and use Ctrl-A instead
+    unmap <C-e>
+    map <C-a> <plug>NERDTreeTabsToggle<CR>
+endif
+
