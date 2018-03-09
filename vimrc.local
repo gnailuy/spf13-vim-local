@@ -6,6 +6,9 @@ colorscheme Tomorrow-Night
 " Disable spelling check by default
 set nospell
 
+" Break long lines
+set wrap
+
 if isdirectory(expand("~/.vim/bundle/nerdtree"))
     " Keep NERDTree open after opening a file
     let NERDTreeQuitOnOpen=0
