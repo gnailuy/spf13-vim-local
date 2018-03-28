@@ -9,6 +9,7 @@ set nospell
 " Break long lines
 set wrap
 
+" NERDTree settings
 if isdirectory(expand("~/.vim/bundle/nerdtree"))
     " Keep NERDTree open after opening a file
     let NERDTreeQuitOnOpen=0
@@ -16,4 +17,8 @@ if isdirectory(expand("~/.vim/bundle/nerdtree"))
     unmap <C-e>
     map <C-a> <plug>NERDTreeTabsToggle<CR>
 endif
+
+" Pymode folding is too slow
+let g:pymode_folding = 0
+let g:pymode_rope=0
 
