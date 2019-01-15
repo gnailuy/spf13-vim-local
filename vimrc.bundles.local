@@ -2,3 +2,6 @@
 Plugin 'heracek/HTML-AutoCloseTag', {'name': 'HTML-AutoCloseTag-heracek'}
 UnBundle 'amirh/HTML-AutoCloseTag'
 
+" TypeScript
+Plugin 'leafgarland/typescript-vim'
+
