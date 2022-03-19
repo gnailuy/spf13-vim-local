@@ -22,6 +22,8 @@ endif
 let g:pymode_folding = 0
 let g:pymode_rope=0
 
-" Avoid windows behave
-behave xterm
+" Avoid windows behave, see `:h feature-list` for the feature names
+if has("win32") || has("win16")
+    behave xterm
+endif
 
